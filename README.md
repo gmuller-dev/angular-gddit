@@ -1,27 +1,68 @@
 # AngularGddit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+A Reddit-like forum application built with Angular.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Browse subreddits and posts
+- View post details and comments
+- Upvote/downvote functionality
+- Responsive sidebar navigation
+- Modern Angular architecture
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Framework:** Angular 12+
+- **Language:** TypeScript
+- **Styling:** CSS with responsive design
+- **HTTP Client:** Angular HttpClient with JWT token interceptor
 
-## Build
+## 📦 Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+# Clone the repository
+git clone https://github.com/gmuller-dev/angular-gddit.git
+cd angular-gddit
 
-## Running unit tests
+# Install dependencies
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Run development server
+ng serve
+```
 
-## Running end-to-end tests
+Navigate to `http://localhost:4200/` to view the app.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🏗️ Development
 
-## Further help
+### Code scaffolding
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `ng generate component component-name` to generate a new component.
+
+### Build
+
+Run `ng build` to build the project. Build artifacts will be stored in `dist/`.
+
+### Running tests
+
+- Unit tests: `ng test`
+- E2E tests: `ng e2e`
+
+## 📁 Project Structure
+
+```
+src/app/
+├── shared/           # Shared components
+│   ├── post-tile/
+│   ├── side-bar/
+│   └── subreddit-side-bar/
+├── token-interceptor.ts  # JWT auth interceptor
+└── app.module.ts     # Main app module
+```
+
+## 🤝 Contributing
+
+This is a portfolio project. Feel free to explore the code!
+
+---
+*Built with Angular CLI*
